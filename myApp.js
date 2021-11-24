@@ -3,7 +3,7 @@ var path = require('path');
 var app = express();
 
 
-staticPath = __dirname + "/camp" "/public/";
+staticPath = __dirname + "/camp" + "/public/";
 
 app.use(express.static(staticPath));
 
