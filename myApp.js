@@ -5,7 +5,7 @@ var app = express();
 
 staticPath = __dirname + "/public/";
 
-app.use('/camp/public', express.static(staticPath))
+app.use('/camp/public', express.static(path.join(__dirname, 'public')))
 
 
 app.get("/", (req, res) => {
@@ -19,5 +19,6 @@ app.get("/test", (req, res) => {
   }
 )
 
+
   
- module.exports = app;
+module.exports = app;
