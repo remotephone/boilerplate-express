@@ -14,8 +14,8 @@ app.get("/", (req, res) => {
   }
 )
 
-app.get("/test", (req, res) => {
-    res.send('Hello Express');
+app.get("/json", (req, res) => {
+    res.send('{"message": "Hello json"}');
   }
 )
 
