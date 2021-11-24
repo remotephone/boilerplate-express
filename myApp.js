@@ -15,10 +15,17 @@ app.get("/", (req, res) => {
 )
 
 app.get("/json", (req, res) => {
-    res.json({
-      message: "Hello json"
-    });
-  });
+    if (process.env.MESSAGE_STYLE == "uppecase"){
+        res.json({
+            message: "Hello json"
+          });
+      
+    } else{
+        res.json({
+        message: "HELLO JSON"
+        });
+    }});
+
   
 
 
