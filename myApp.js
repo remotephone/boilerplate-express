@@ -5,7 +5,7 @@ var app = express();
 
 staticPath = __dirname + "/public/";
 
-app.use('/public', express.static(staticPath))
+app.use('/camp/public', express.static(staticPath))
 
 
 app.get("/", (req, res) => {
